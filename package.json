@@ -1,0 +1,38 @@
+{
+  "name": "chusquin-own-website",
+  "version": "1.0.0",
+  "description": "own-website, designed to host my resume, and maybe evolve when I want to try new things.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "lint": "eslint ./src",
+    "test": "jest --colors -b -e --logHeapUsage",
+    "build": "webpack --mode production"
+  },
+  "author": "Charles HUSQUIN",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-hot-loader": "^4.12.18"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-react": "^7.17.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "path": "^0.12.7",
+    "react-test-renderer": "^16.12.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
