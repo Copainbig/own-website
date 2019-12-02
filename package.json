@@ -7,7 +7,8 @@
     "start": "webpack-dev-server --hot",
     "lint": "eslint ./src",
     "test": "jest --colors -b -e --logHeapUsage",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && aws s3 rm s3://chusquin.com --recursive && aws s3 cp ./dist s3://chusquin.com/ --recursive"
   },
   "author": "Charles HUSQUIN",
   "license": "ISC",
