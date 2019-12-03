@@ -8,7 +8,7 @@
     "lint": "eslint ./src",
     "test": "jest --colors -b -e --logHeapUsage",
     "build": "webpack --mode production",
-    "deploy": "npm run build && aws s3 rm s3://chusquin.com --recursive && aws s3 cp ./dist s3://chusquin.com/ --recursive"
+    "deploy": "npm run build"
   },
   "author": "Charles HUSQUIN",
   "license": "ISC",
@@ -33,7 +33,6 @@
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "path": "^0.12.7",
-    "react-test-renderer": "^16.12.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
