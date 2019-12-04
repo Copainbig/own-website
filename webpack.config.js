@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'index_bundle.js'
+    filename: "index.[chunkhash].js"
   },
   mode: 'development',
   devServer: {
@@ -31,7 +31,11 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Welcome to chusquin.com',
-      template: 'src/assets/index.html'
+      template: 'src/assets/index.html',
+      meta: {
+        "http-equiv":"cache-control",
+        "content": "no-cache"
+      }
     })
   ]
 };
